@@ -20,12 +20,12 @@ body{overflow:hidden;}
 .wall_img img{width:100%;height:100%;}
 .img{position:absolute;z-index:30;left:50%;width:100%;height:auto;margin-left:-49%;}
 .img img{vertical-align:bottom;}
-.one .img{width:98%;}
+.one .img{width:98%;top:inherit;bottom:-5%;}
 .two .img{width:100%;margin-left:-50%;}
 .two .img img{width:auto;}
 .three .img{width:85%;left:0;margin:0;}
 .four .img{width:97%;left:-50px;bottom:-50px;filter:alpha(opacity=0);opacity:0;margin:0;}
-.slogan_txt{position: absolute;width:76%;left:50%;margin-left:-38%;top:5%;}
+.slogan_txt{position: absolute;width:76%;left:50%;margin-left:-38%;top:5%;z-index:990;}
 .slogan_txt span.block{width:100%;}
 .slogan_txt span.block img{width:100%;}
 .two .slogan_txt,.three .slogan_txt{width:78%;margin-left:-39%;top:10%;}
