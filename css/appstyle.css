@@ -30,7 +30,7 @@ body{overflow:hidden;}
 .slogan_txt span.block img{width:100%;}
 .two .slogan_txt,.three .slogan_txt{width:78%;margin-left:-39%;top:10%;}
 .four .slogan_txt{top:15%;}
-.img{top:50%;height:auto;width:100%;}
+.img{bottom:0;height:auto;width:100%;}
 .slogan_p1{margin-top:5%;}
 .download{margin-top:25%;}
 .download p{padding:10px 0;}
