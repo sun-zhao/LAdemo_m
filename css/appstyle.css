@@ -17,18 +17,15 @@ body{overflow:hidden;}
 .three{background:#e5e8ea;}
 .four{background:#f4f5f4;}
 .wall_img{width:100%;height:100%;position: absolute;top:0;left:0;}
-.wall_img img{width:100%;height:100%;}
 .img{position:absolute;z-index:30;left:50%;width:100%;height:auto;margin-left:-49%;}
-.img img{vertical-align:bottom;}
 .one .img{width:98%;top:inherit;bottom:-5%;}
-.two .img{width:100%;margin-left:-50%;bottom:-8%;}
-.two .img img{width:auto;}
-.three .img{width:85%;left:0;margin:0;bottom:-15%;}
+.two .img{width:100%;margin-left:-50%;}
+.three .img{width:80%;left:0;margin:0;bottom: -2%;}
 .four .img{width:97%;left:-50px;bottom:-50px;filter:alpha(opacity=0);opacity:0;margin:0;}
 .slogan_txt{position: absolute;width:76%;left:50%;margin-left:-38%;top:5%;z-index:990;}
 .slogan_txt span.block{width:100%;}
 .slogan_txt span.block img{width:100%;}
-.two .slogan_txt,.three .slogan_txt{width:78%;margin-left:-39%;top:10%;}
+.two .slogan_txt,.three .slogan_txt{width:70%;margin-left:-35%;top:6%;}
 .four .slogan_txt{top:15%;}
 .img{bottom:0;height:auto;width:100%;}
 .slogan_p1{margin-top:5%;}
