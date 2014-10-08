@@ -9,36 +9,13 @@ $(document).ready(function(){
         $dot =$('.dot_list'),
         li_Nun =$dot.find('li').length,
         top_n = 0;
-//  $content.on('mousewheel',function(a,b){
-//      if(!$wallpaper.is(':animated')){
-//          if(top_n < 0 && top_n > -($wall_page.length-1) || top_n == 0 && b == -1 || top_n == -($wall_page.length-1) && b == 1){
-//              top_n += b>0?1:-1;
-//              $wallpaper.animate({
-//                  'top':top_n*$window.height()
-//              },800);
-//              $dot.find('li').eq(-top_n).addClass('current').siblings().removeClass('current');
-//              if($dot.find('li').eq(3).hasClass('current')){
-//                  $('.four .img').stop().animate({
-//                      'opacity': 1,
-//                      'left': 0,
-//                      'bottom': 0
-//                  },1500);
-//              } else {
-//                  $('.four .img').stop().animate({
-//                      'opacity': 0,
-//                      'left': -50,
-//                      'bottom': -50
-//                  }, 800);
-//              }
-//          }
-//      }
-//  });
     $content.off('touchstart').on('touchstart',function(){
 		event.preventDefault();
 		var startTouch  = event.touches[0];
 		startX = startTouch.pageX;
 		startY = startTouch.pageY;
 		var endX=startX;
+        $btn = $('.btn');
 		$(this).off('touchmove').on('touchmove',function(){
 			event.preventDefault();
 			var moveTouch  = event.touches[0];
@@ -73,6 +50,11 @@ $(document).ready(function(){
 			                        'bottom': -50
 			                    }, 800);
 			                }
+                            if($dot.find('li').eq(0).hasClass('current')){
+                                $btn.fadeIn();
+                            }else{
+                                $btn.fadeOut();
+                            }
 			            }
 			        }
 				}else{
@@ -97,6 +79,11 @@ $(document).ready(function(){
 		                        'bottom': -50
 		                    }, 800);
 		                }
+                        if($dot.find('li').eq(0).hasClass('current')){
+                            $btn.fadeIn();
+                        }else{
+                            $btn.fadeOut();
+                        }
 		            }
 		        }
 				}
