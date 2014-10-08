@@ -21,9 +21,9 @@ body{overflow:hidden;}
 .img{position:absolute;z-index:30;left:50%;width:100%;height:auto;margin-left:-49%;}
 .img img{vertical-align:bottom;}
 .one .img{width:98%;top:inherit;bottom:-5%;}
-.two .img{width:100%;margin-left:-50%;}
+.two .img{width:100%;margin-left:-50%;bottom:-8%;}
 .two .img img{width:auto;}
-.three .img{width:85%;left:0;margin:0;}
+.three .img{width:85%;left:0;margin:0;bottom:-15%;}
 .four .img{width:97%;left:-50px;bottom:-50px;filter:alpha(opacity=0);opacity:0;margin:0;}
 .slogan_txt{position: absolute;width:76%;left:50%;margin-left:-38%;top:5%;z-index:990;}
 .slogan_txt span.block{width:100%;}
@@ -60,7 +60,7 @@ a.code .code_img{position: absolute;top:-233px;left:-90px;display:none;}
 .contact td{line-height:22px;}
 .contact_box p{height:50px;line-height:50px;padding-left:30px;margin-left:20px;background: url(../img/phone.png) no-repeat left center;background-size:20px;}
 .contact_box p.mail{background: url(../img/mail.png) no-repeat left center;background-size:20px;}
-.pop_link{position:fixed;width:80%;height:50px;line-height:25px;padding:10px;background:#f27d54;border:1px solid #347cdc;border-radius:4px;top:130px;left:50%;margin-left:-43%;z-index:5000;color:#fff;}
+.pop_link{position:fixed;width:80%;height:50px;line-height:25px;padding:10px;background:#f27d54;border-radius:4px;top:130px;left:50%;margin-left:-43%;z-index:5000;color:#fff;}
 .pop_link .off{display:block;position:absolute;width:15px;height:15px;line-height:15px;font-size:15px;text-align:center;border:1px solid #fff;border-radius:50%;background:#fff;right: -5px;top: -5px;border:1px solid #347cdc;}
 
 
