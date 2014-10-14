@@ -17,13 +17,12 @@ $(document).ready(function(){
 		var endX=startX;
         $btn = $('.btn');
 		$(this).off('touchmove').on('touchmove',function(){
-			event.preventDefault();
+//			event.preventDefault();
 			var moveTouch  = event.touches[0];
 			endX = moveTouch.pageX;
 			endY = moveTouch.pageY;
-		});
-		$(this).off('touchend').on('touchend',function(){
-			event.preventDefault();
+            $(this).off('touchend').on('touchend',function(){
+//			event.preventDefault();
 			x = endX - startX;
 			y = endY - startY;
 			var b = 0;
@@ -33,9 +32,9 @@ $(document).ready(function(){
 					if(!$wallpaper.is(':animated')){
 			            if(top_n < 0 && top_n > -($wall_page.length-1) || top_n == 0 && b == -1 || top_n == -($wall_page.length-1) && b == 1){
 			                top_n += b>0?1:-1;
-			                $wallpaper.animate({
+			                $wallpaper.css({
 			                    'top':top_n*$window.height()
-			                },500);
+			                }).addClass('animate');
 			                $dot.find('li').eq(-top_n).addClass('current').siblings().removeClass('current');
 			                if($dot.find('li').eq(3).hasClass('current')){
 			                    $('.four .img').stop().animate({
@@ -62,9 +61,9 @@ $(document).ready(function(){
 					if(!$wallpaper.is(':animated')){
 		            if(top_n < 0 && top_n > -($wall_page.length-1) || top_n == 0 && b == -1 || top_n == -($wall_page.length-1) && b == 1){
 		                top_n += b>0?1:-1;
-		                $wallpaper.animate({
+		                $wallpaper.css({
 		                    'top':top_n*$window.height()
-		                },500);
+		                }).addClass('animate');
 		                $dot.find('li').eq(-top_n).addClass('current').siblings().removeClass('current');
 		                if($dot.find('li').eq(3).hasClass('current')){
 		                    $('.four .img').stop().animate({
@@ -89,8 +88,8 @@ $(document).ready(function(){
 				}
 			}
 		});
+		});
 	});
-	
 	$wall_page.height($window.height());
     $window.resize(function(){
         $wall_page.height($window.height());
