@@ -16,6 +16,7 @@ $(document).ready(function(){
 		startY = startTouch.pageY;
 		var endX=startX;
         $btn = $('.btn');
+		$btn_bottom = $('.btn_bottom');
 		$(this).off('touchmove').on('touchmove',function(){
 //			event.preventDefault();
 			var moveTouch  = event.touches[0];
@@ -51,8 +52,10 @@ $(document).ready(function(){
 			                }
                             if($dot.find('li').eq(0).hasClass('current')){
                                 $btn.fadeIn();
+								$btn_bottom.stop().animate({bottom:-100},400);
                             }else{
                                 $btn.fadeOut();
+								$btn_bottom.stop().animate({bottom:0},700);
                             }
 			            }
 			        }
@@ -78,11 +81,13 @@ $(document).ready(function(){
 		                        'bottom': -50
 		                    }, 800);
 		                }
-                        if($dot.find('li').eq(0).hasClass('current')){
-                            $btn.fadeIn();
-                        }else{
-                            $btn.fadeOut();
-                        }
+						if($dot.find('li').eq(0).hasClass('current')){
+							$btn.fadeIn();
+							$btn_bottom.stop().animate({bottom:-100},400);
+						}else{
+							$btn.fadeOut();
+							$btn_bottom.stop().animate({bottom:0},700);
+						}
 		            }
 		        }
 				}
