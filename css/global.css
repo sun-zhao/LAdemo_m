@@ -102,7 +102,7 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .clear{clear:both;line-height:0;height:0;font-size:0;}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 .clearfix{zoom:1;}
-.ie-css3,.ie-css3 img{behavior: url(../css/PIE.htc);}
+/*.ie-css3,.ie-css3 img{behavior: url(../css/PIE.htc);}*/
 .line{width: 100%;border-bottom: 1px solid;font-size: 0;line-height: 0;margin:30px 0;}
 
 

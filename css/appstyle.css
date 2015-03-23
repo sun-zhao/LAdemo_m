@@ -1,6 +1,6 @@
 /*header footer*/
 body{overflow:hidden;}
-.header{width:100%;height:60px;position:fixed;left:0;top:0;z-index:50;background-color: #2d3039;z-index:100;}
+.header{width:100%;height:60px;position:fixed;left:0;top:0;background-color: #2d3039;z-index:100;}
 .nav li{float: left;padding-left:20px;}
 .nav li a{display: block;height:60px;line-height:60px;color:#fff;padding:0 20px;}
 .nav li a:hover,.nav li.current a{color:#59a7f9;}
@@ -31,7 +31,7 @@ body{overflow:hidden;}
 .slogan_p1{margin-top:5%;}
 .download{margin-top:25%;}
 .download p{padding:10px 0;}
-.download p span{display:inline-block;background:url("../img/arrow.png") no-repeat right center;padding:0 15px;position: relative;}
+.download p span{display:inline-block;padding:0 15px;position: relative;}
 .download p span em{display:inline-block;position: absolute;width:150px;height:150px;top:-150px;left:0;display:none;}
 .download p span em img{width:150px;height:150px;}
 .download p span:hover em{display:block;transition:0.5s;-webkit-transition:0.5s;}
@@ -45,11 +45,11 @@ body{overflow:hidden;}
 a.code{position:relative;}
 a.code .code_img{position: absolute;top:-233px;left:-90px;display:none;}
 .qq{background:url("../img/qq.png");}
-.qq:hover{background:url("../img/qq_h.png");}
-.wx{background:url("../img/weichat.png");}
-.wx:hover{background:url("../img/weichat_h.png");}
-.sina{background:url("../img/sina.png") no-repeat;}
-.sina:hover{background:url("../img/sina_h.png");}
+/*.qq:hover{background:url("../img/qq_h.png");}*/
+/*.wx{background:url("../img/weichat.png");}*/
+/*.wx:hover{background:url("../img/weichat_h.png");}*/
+/*.sina{background:url("../img/sina.png") no-repeat;}*/
+/*.sina:hover{background:url("../img/sina_h.png");}*/
 .footer span.last a.wx{*left:10px;}
 .btn{display:block;width:85%;left:50%;margin-left:-42%;position:absolute;bottom:12%;background:#0065e5;border:1px solid #074ca4;border-radius:5px;height:44px;line-height:44px;color:#fff;font-size:1.6rem;z-index:80;text-align:center;box-shadow:0 0 15px #2f4866;}
 .contact{width:100%;height:100%;}
@@ -58,7 +58,7 @@ a.code .code_img{position: absolute;top:-233px;left:-90px;display:none;}
 .contact_box p,.contact_box a{height:50px;line-height:50px;padding-left:30px;margin-left:20px;background: url(../img/phone.png) no-repeat left center;background-size:20px;color: #fff;}
 .contact_box p.mail{background: url(../img/mail.png) no-repeat left center;background-size:20px;}
 .pop_link{position:fixed;width:80%;height:50px;line-height:25px;padding:10px;background:#f27d54;border-radius:4px;top:130px;left:50%;margin-left:-43%;z-index:5000;color:#fff;}
-.pop_link .off{display:block;position:absolute;width:15px;height:15px;line-height:15px;font-size:15px;text-align:center;border:1px solid #fff;border-radius:50%;background:#fff;right: -5px;top: -5px;border:1px solid #347cdc;}
+.pop_link .off{display:block;position:absolute;width:15px;height:15px;line-height:15px;font-size:15px;text-align:center;border-radius:50%;background:#fff;right: -5px;top: -5px;border:1px solid #347cdc;}
 .animate{transition:0.3s;-webkit-transition:0.3s;}
 .btn_bottom{height:50px;position:fixed;left:0;bottom:-100px;right:0;background:#000;opacity: 0.8;z-index:200;}
 .btn_bottom a{display:inline-block;width:100px;height:30px;line-height:30px;text-align: center;color:#fff;background:#0065e5;border-radius:3px;margin:10px 10px 0 0;}
