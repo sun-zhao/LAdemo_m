@@ -135,7 +135,7 @@ a.code .code_img{position: absolute;top:-233px;left:-90px;display:none;}
 .animate .img4-4{-webkit-animation: fadeInLeft .3s 1s ease-in-out both;}
 .animate .img4-5{-webkit-animation: fadeInRight .3s 1s ease-in-out both;}
 .animate .img4-6{-webkit-animation: flipInY 1s 2s ease-in-out both;}
-
+.page4{background:#232426;color:#fff;}
 @media screen and (min-width:370px) {
     .icon_list{top:25%;}
     .icon_list li{height:140px;}
