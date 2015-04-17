@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $mask = $('.mask');
     $footer = $('.footer');

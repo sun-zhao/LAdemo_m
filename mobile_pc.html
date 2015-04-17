@@ -4,7 +4,8 @@
     <meta http-equiv="Content-Type">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="format-detection" content="telephone=no">
 	<title>明道OA</title>
 	<link rel="stylesheet" type="text/css" href="css/global.css"/>
@@ -67,6 +68,7 @@
             </tr>
             <tr><td class="aligncenter font12">明道－企业社会化协作平台版权所有<br>2012-2014 沪ICP备14017582号-2</td></tr>
         </table>
+        <span class="start"></span>
     </div>
 </div>
 <div class="mask" style="display:;opacity:0.5;"></div>
@@ -112,7 +114,7 @@
     $(function(){
         var winH = $(window).height(),
             $cont = $('.container');
-//        alert(winH);
+            $('.page').height(winH);
         if(winH <= 450){
             $cont.addClass('mid');
         }else{
@@ -140,13 +142,12 @@
                             nowpage = 0;
                          }
                         $(".container").animate({"top":nowpage * -100 + "%"},400);
-
                         $(".page").eq(nowpage).addClass("animate").siblings().removeClass("animate");
                     }
                 }
             );
         }
-    );
+    )
 </script>
 </body>
 </html>
